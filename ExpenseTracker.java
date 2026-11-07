@@ -30,7 +30,7 @@ public class ExpenseTracker{
                     continue;
                 }
                 System.out.println("What category is this expense?");
-                String cat = sc.nextLine();
+                String cat = sc.nextLine().replace(",", " ");
                 expenses.add(new Expense(desc, amount, cat));
                 System.out.println("Expense added");
             }
